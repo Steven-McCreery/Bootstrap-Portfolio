@@ -1,12 +1,15 @@
 
+/*background styling*/
 body{
 	background-image:  url(../images/vintage-concrete.png);
 }
 
+/*enabling contents to drop below header*/
 .body{
 	margin-top: 10%;
 }
 
+/*header sticks to top of screen and contents scrolls behind*/
 .header{
 	height: 100px;
 	background-color:#ffffff;
@@ -18,6 +21,7 @@ body{
 	z-index: 300;
 }
 
+/*formatting header sized text in body*/
 .teal_text1{
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #4aaaa5;
@@ -27,6 +31,7 @@ body{
 	margin: 3% 3% 3% 2%;
 }
 
+/*formatting text in aside section*/
 .teal_text2{
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #4aaaa5;
@@ -35,16 +40,19 @@ body{
 	border-bottom: #cccccc 1px solid;
 }
 
+/*giving aside space from body's main content*/
 .connect{
 	padding: 3%;
 	margin-right: -2%;
 }
 
+/*getting name styling adjusted*/
 h3{
 	line-height: 58px;
-	font-size: 80%;	
+	font-size: 100%;	
 }
 
+/*additional name area adjustments*/
 .name{
 	background-color:#4aaaa5;
 	color: white;
@@ -57,6 +65,7 @@ h3{
 	height: 97px;
 }
 
+/*main area's background styling*/
 .column1{
 	background-color: #ffffff;
 	border: #dddddd;
@@ -64,12 +73,40 @@ h3{
     margin-bottom: 10%;
 }
 
+/*portfolio's formatting*/
 .portfolio{
 	margin: 2%;
 }
 
 .nav{
 	margin-top: 13px;
+}
+
+.portfolio_images{
+	width: 50%;
+	float: left;
+	position: relative;
+	margin-bottom: 8%;
+}
+
+.picture{
+		width: 86%;
+		height: auto;
+		float: left;
+	}
+
+.picture_title{
+	background-color:#4aaaa5;
+	color: white;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 20px;
+	text-align:center;
+	margin: 43% 0px 0px 0px;
+	width: 86%;
+	line-height: 60px;
+	height: 60px;
+	float: left;
+	position: absolute;
 }
 
 .form-group{
@@ -98,6 +135,7 @@ h3{
 	background-color: #4aaaa5;
 }
 
+/*button interactivity*/
 a:active {
   outline: 5px solid gray;
   outline-offset: 1px;
@@ -122,6 +160,7 @@ a:focus {
 	background-color: #4aaaa5; 
 }
 
+/*footer now stays on screen and contents scroll*/
 .footer{
 	background-color: #666666;
 	color: #777777;
@@ -139,15 +178,77 @@ a:focus {
 	line-height: 100px;
 }
 
-.nav .navbar-nav .navbar-collapse.collapse .collapse {
-      display: block;
-  }
+/*to fix the navbar from collapsing during resizing*/
+@media only screen and (min-width: 420px) {
+    .collapse {
+        display: block;
+    }
 
-/*@grid-float-breakpoint{
+    .navbar-header {
+        float: left;
+    }
 
-}*/
+    .navbar-toggle {
+        display: none;
+    }
 
+    .navbar-nav.navbar-left {
+       float: left;
+       margin: 0;
+    }
 
+    .navbar-nav.navbar-right {
+       float: right;
+       margin: 0;
+    }
+    .navbar-nav>li {
+        float: left;
+    }
+    .navbar-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
 
+/*additional fixing the navbar from collapsing during resizing*/
+@media only screen and (max-width: 420px) {
+     .collapse {
+        display: none;
+     }
+
+     .navbar-header {
+        display: block;
+     }
+}
+
+/*to fix resizing of main screen sections (margins and header size to allow for navigation items to fit)*/
+@media only screen and (max-width: 991px) {
+	.header {
+		height: 175px;
+		}
+
+	.connect {
+		margin-bottom: 18%;
+		float: left !important;
+	}
+
+	.content {
+		margin-top: 20%;
+		margin-bottom: 0%;
+	}
+
+	.portfolio_images {
+    	width: 115%;
+	}
+
+	.picture_title {
+	    margin: 55% 0px 0px 0px;
+	}
+
+	.body {
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+}
 
 
