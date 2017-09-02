@@ -3,6 +3,75 @@ body{
 	background-image:  url(../images/vintage-concrete.png);
 }
 
+.body{
+	margin-top: 10%;
+}
+
+.header{
+	height: 100px;
+	background-color:#ffffff;
+	border-bottom: #cccccc 3px solid;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 300;
+}
+
+.teal_text1{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	font-size: 28px;
+	font-weight: bold;
+	border-bottom: #cccccc 3px solid;
+}
+
+.teal_text2{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color: #4aaaa5;
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom: #cccccc 1px solid;
+}
+
+.connect{
+	padding: 3%;
+}
+
+h3{
+	line-height: 58px;
+	font-size: 80%;	
+}
+
+.name{
+	background-color:#4aaaa5;
+	color: white;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 25px;
+	text-align:center;
+	line-height: 100px;
+	/*width: 240px;*/
+	float: left;
+	height: 97px;
+}
+
+.column1{
+	background-color: #ffffff;
+	border: #dddddd;
+}
+
+.nav{
+	margin-top: 13px;
+}
+
+.content{
+	border: 1px solid gray;
+}
+
+.form-group{
+	margin: 1%;
+}
+
 .contact_image{
 	height: 50px;
 	width: 50px;
@@ -11,8 +80,48 @@ body{
 	margin-top: 10px;
 }
 
+.nav2{
+	border-left: 1px solid rgba(222, 222, 222, .7);
+	border-right: 1px solid rgba(222, 222, 222, .7);
+}
+
+.btn-lg{
+	margin: 1%;
+}
+
+a:active {
+  outline: 5px solid gray;
+  outline-offset: 1px;
+}
+
+a:focus {
+	background-color: #FF803E;
+}
+
+.submit a:link, a:visited, a:focus, a:active, a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+.navigation a:link, a:visited{
+	text-decoration: none;
+	color: #777777;
+}
+
+.navigation a:hover{
+	color: white;
+	background-color: #4aaaa5; 
+}
+
+/*@grid-float-breakpoint{
+
+}*/
 
 
+/*.container{
+	max-width: 960px !important;
+}
+*/
 
 
 
